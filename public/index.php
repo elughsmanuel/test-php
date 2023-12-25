@@ -5,6 +5,7 @@ $request = $_GET['request'] ?? '';
 
 $routes = [
     'api/v1/create-product' => '../src/apis/create-product.php',
+    'api/v1/get-all-products' => '../src/apis/get-all-products.php',
 ];
 
 if ($request === '') {

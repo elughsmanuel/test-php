@@ -28,6 +28,17 @@ class Product {
         $result = $this->conn->query("SELECT * FROM products WHERE id = $id");
         return $result->fetch_assoc();
     }
+
+    public function getAllProducts() {
+        $result = $this->conn->query("SELECT * FROM products");
+        $products = array();
+    
+        while ($row = $result->fetch_assoc()) {
+            $products[] = $row;
+        }
+    
+        return $products;
+    }
 }
 
 ?>
