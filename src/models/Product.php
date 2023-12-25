@@ -39,6 +39,18 @@ class Product {
     
         return $products;
     }
+
+    public function updateProduct($id, $name, $description, $price, $category, $quantity) {
+        $sql = "UPDATE products SET
+            name = '$name',
+            description = '$description',
+            price = '$price',
+            category = '$category',
+            quantity = '$quantity'
+            WHERE id = $id";
+
+        return $this->conn->query($sql);
+    }
 }
 
 ?>
