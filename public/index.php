@@ -8,6 +8,7 @@ $routes = [
     'api/v1/get-all-products' => '../src/apis/get-all-products.php',
     'api/v1/get-product-by-id' => '../src/apis/get-product-by-id.php',
     'api/v1/update-product' => '../src/apis/update-product.php',
+    'api/v1/delete-product' => '../src/apis/delete-product.php',
 ];
 
 if ($request === '') {

@@ -51,6 +51,11 @@ class Product {
 
         return $this->conn->query($sql);
     }
+
+    public function deleteProduct($id) {
+        $sql = "DELETE FROM products WHERE id = $id";
+        return $this->conn->query($sql);
+    }
 }
 
 ?>
