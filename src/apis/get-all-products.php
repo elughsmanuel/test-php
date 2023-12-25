@@ -18,4 +18,5 @@ function getAllProducts($conn) {
 }
 
 getAllProducts($conn);
+
 ?>
